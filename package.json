@@ -18,7 +18,8 @@
   },
   "scripts": {
     "lint": "prettier --write \"src/**/*.sol\"",
-    "solhint:check": "solhint --config ./.solhint.json \"src/**/*.sol\""
+    "solhint:check": "solhint --config ./.solhint.json \"src/**/*.sol\"",
+    "abi-to-frontend": "./scripts/abi.sh CliptoExchange > ../clipto-frontend/src/abis/CliptoExchange.json && ./scripts/abi.sh CliptoToken > ../clipto-frontend/src/abis/CliptoToken.json"
   },
   "dependencies": {
     "@openzeppelin/contracts-upgradeable": "^4.4.1"
